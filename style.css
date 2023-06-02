@@ -100,27 +100,8 @@ table tr td:not(:last-child) {
     border-radius: 8px;
 }
 
-.test {
-    color: #daa520bf;
-}
 
-@keyframes burn {
-    0% {
-      border-image: none;
-      background: transparent;
-      box-shadow: none;
-    }
-    50% {
-      border-image: url(img/flames.png) 30 round;
-      background: transparent;
-      box-shadow: none;
-    }
-    100% {
-      border-image: none;
-      background: transparent;
-      box-shadow: none;
-    }
-  }
+
 
   @keyframes flicker {
     0%, 80%, 100% {
