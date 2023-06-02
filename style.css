@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    background: linear-gradient(to right, #000000, #737373, #000000);
+    color: #adff2f;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.tic-tac-to {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.haeder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 18px;
+    gap: 18px;
+}
+
+.haeder img {
+    width: 70px;
+}
+
+table {
+    border-collapse: collapse;
+    border: none;
+}
+
+table td {
+    width: 100px;
+    height: 100px;
+    border: none;
+    text-align: center;
+    font-size: 30px;
+   
+}
+
+td:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    cursor: pointer; 
+}
+
+table tr:not(:last-child) td {
+    border-bottom: 5px solid  rgba(173, 255, 47, 0.3);
+    animation: flicker 2s infinite;
+}
+
+table tr td:not(:last-child) {
+    border-right: 5px solid rgba(173, 255, 47, 0.3);
+    animation: flicker 2s infinite;
+   
+}
+
+
+.winning-line {
+    height: 3px !important;
+    background-color: rgb(173, 255, 47);
+    position: absolute;
+}
+
+
+.button {
+    margin-top: 32px;
+}
+
+.button button{
+    background-color: greenyellow;
+    height: 40px !important;
+    border: 2px solid rgb(15, 77, 2);
+    border-radius: 7px;
+    padding: 8px;
+    color: rgb(15, 77, 2);
+    cursor: pointer;
+
+}
+
+.button button:hover {
+    background-color: rgb(15, 77, 2);
+    border: 2px solid greenyellow;
+    color: greenyellow;
+}
+
+.content div {
+    max-width: 350px;
+    height: 316px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.content div img {
+    max-width: 350px;
+    box-shadow:0px 0px 50px 0px #dcd9d96c;
+    border-radius: 8px;
+}
+
+.test {
+    color: #daa520bf;
+}
+
+@keyframes burn {
+    0% {
+      border-image: none;
+      background: transparent;
+      box-shadow: none;
+    }
+    50% {
+      border-image: url(img/flames.png) 30 round;
+      background: transparent;
+      box-shadow: none;
+    }
+    100% {
+      border-image: none;
+      background: transparent;
+      box-shadow: none;
+    }
+  }
+
+  @keyframes flicker {
+    0%, 80%, 100% {
+      border-color: rgba(255, 0, 0, 0.4);
+      background-color: transparent;
+    }
+    20% {
+        border-color: rgba(255, 236, 140, 0.4);
+        background-color:transparent;
+      }
+
+    40% {
+      border-color: hsla(25, 100%, 50%, 0.399);
+      background-color:transparent;
+    }
+
+    60% {
+        border-color: rgba(255, 236, 140, 0.4);
+        background-color:transparent;
+      }
+  }
+
+ 
